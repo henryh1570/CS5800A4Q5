@@ -1,4 +1,4 @@
-public class IndividualHolder extends AccountHolder {
+public class IndividualHolder extends AccountHolder implements Util {
     private String name;
     private String SSN;
 
@@ -23,5 +23,10 @@ public class IndividualHolder extends AccountHolder {
 
     public void setSSN(String SSN) {
         this.SSN = SSN;
+    }
+
+    @Override
+    public String convertNameUpperCase(String name) {
+        return name.toUpperCase();
     }
 }

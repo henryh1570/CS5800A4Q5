@@ -9,7 +9,7 @@ public abstract class AccountHolder {
         this.address = address;
     }
 
-    public int getNextID() {
+    public static int getNextID() {
         return ThreadLocalRandom.current().nextInt(999999) + 1;
     }
 }
